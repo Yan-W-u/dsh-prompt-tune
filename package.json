@@ -1,7 +1,6 @@
 {
   "name": "dsh-prompt-tune",
   "version": "1.0.0",
-  "private": true,
   "type": "module",
   "license": "MIT",
   "description": "One-click prompt optimizer pill in the DSH composer: rewrite the current draft into an execution-ready prompt with the live model route.",
