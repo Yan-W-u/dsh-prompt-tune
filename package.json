@@ -1,0 +1,53 @@
+{
+  "name": "dsh-prompt-tune",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "One-click prompt optimizer pill in the DSH composer: rewrite the current draft into an execution-ready prompt with the live model route.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "prompt",
+    "prompt-optimizer",
+    "prompt-engineering"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yan-W-u/dsh-prompt-tune.git"
+  },
+  "homepage": "https://github.com/Yan-W-u/dsh-prompt-tune#readme",
+  "bugs": {
+    "url": "https://github.com/Yan-W-u/dsh-prompt-tune/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}

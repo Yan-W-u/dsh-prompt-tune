@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Prompt Optimizer",
+    "description": "Adds an optimize pill beside the composer: one click rewrites your draft into a precise, execution-ready prompt with the live model route, with one-click undo."
+  }
+}

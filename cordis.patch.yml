@@ -1,0 +1,10 @@
+# dsh-prompt-tune bundle patch.
+#
+# One Host row serves the optimizer HTTP route and the agent tool; the Client
+# half registers the pill in conversation.input.right.
+- insert:
+    - id: prompt-tune
+      name: 'dsh-prompt-tune'
+      config:
+        timeoutMs: 60000
+        maxInputChars: 20000
